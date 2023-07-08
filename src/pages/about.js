@@ -1,23 +1,25 @@
 // Step 1: Import React
 import * as React from 'react'
 
-import Greeting from "../components/greetings"
-
 import Layout from '../components/layout'
 
 // Step 2: Define your component
-const IndexPage = () => {
+const AboutPage = () => {
   return (
     <main>
-      <Layout pageTitle="Home Page">
+      <Layout pageTitle="About Page">
       <p>I'm making this by following the Gatsby Tutorial.</p>
-      </Layout>
+    </Layout>
     </main>
   )
 }
 
-// You'll learn about this in the next task, just copy it for now
-export const Head = () => <title>Home Page</title>
+export const Head = () => (
+    <>
+      <title>About Me</title>
+      <meta name="description" content="Your description" />
+    </>
+  ) // adds meta-data
 
 // Step 3: Export your component
-export default IndexPage
+export default AboutPage
